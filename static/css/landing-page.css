@@ -113,5 +113,20 @@ footer {
 }
 
 .feedData {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
 }

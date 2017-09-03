@@ -40,9 +40,11 @@ Vue.component('tech-meme', simpleRender());
 Vue.component('tech-crunch', simpleRender());
 Vue.component('product-hunt', {
         props: ['results'],
-        template : `<div class="list-group"><div v-for="result in processTopics">
-                        <a :href="result.redirect_url" target="_blank" class="list-group-item list-group-item-action" target="_blank">{{ result.name }} <span> -  {{ result.tagline }} </span> </a> 
-                    </div></div>`,
+        template : `<div class="list-group feedData">
+                        <div v-for="result in processTopics">
+                            <a :href="result.redirect_url" target="_blank" class="list-group-item list-group-item-action" target="_blank">{{ result.name }} <span> -  {{ result.tagline }} </span> </a> 
+                        </div>
+                    </div>`,
         computed : {
             processTopics () {
                 return this.results.slice(0,11); }
@@ -52,7 +54,7 @@ Vue.component('product-hunt', {
 function simpleRender () {
     return {
         props: ['results'],
-        template : `<div class="list-group">
+        template : `<div class="list-group feedData">
                         <div v-for="result in processTopics">
                             <a :href="result.link" target="_blank" 
                                 class="list-group-item list-group-item-action">{{result.title}}
