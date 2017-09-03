@@ -1,0 +1,117 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    color: #333;
+}w lo
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.topnav {
+    font-size: 14px;
+}
+
+.techfeedy-logo {
+    margin: 0 2px 0 3px;
+    font-size: 1.4em;
+}
+
+.techfeedy-logo-copy {
+    margin: 0 2px 0 0;
+    font-size: 1.5em;
+}
+
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #ffffff;
+    background: url(../img/ckt-bg.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.image-overlay {
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.techfeedy-section-heading {
+    text-align: center;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.techfeedy-space {
+    margin-top: 50px;
+}
+
+.techfeedy-contact-wrapper {
+    font-size: 100px;
+    text-align: center;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.feedData {
+    font-size: 14px;
+}

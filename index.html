@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Cache-Control" content="no-store">
+        <meta http-equiv="cache-control" content="max-age=0">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
+        <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+        <meta http-equiv="pragma" content="no-cache">
+        <title>TechFeedy - Fav trending topics</title>
+        <!--<link rel="shortcut icon" href="/static/img/Icon@2x.png">-->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/css/landing-page.css" rel="stylesheet">
+        <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Navigator -->
+        <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+            <div class="container topnav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand topnav" href="/">
+                        <span class="techfeedy-logo">
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                            <span class="techfeedy-logo-copy">TechFeedy</span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/#about">About</a>
+                        </li>
+                        <li>
+                            <a href="/#terms">Terms</a>
+                        </li>
+                        <li>
+                            <a href="/#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>    
+        
+        <!-- Header -->
+        <a name="top"></a>       
+        <div class="intro-header">
+            <div class="image-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>
+                                <span class="techfeedy-logo"><i class="fa fa-newspaper-o"></i></span>
+                                <span class="techfeedy-logo-copy">TechFeedy</span>
+                            </h1>
+                            <h2>All your trending topics in one place </h2>
+                            <hr class="intro-divider">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.intro-header -->
+        
+        <!-- Page Content -->
+        <a name="about"></a>
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="section-heading">Get current highlights from these sites</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-xs-12"><img class="img-responsive center-block" src="/static/img/hackernews-logo.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-xs-12"><img class="img-responsive center-block" src="/static/img/techmeme-logo.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-xs-12"><img class="img-responsive center-block" src="/static/img/techcrunch-logo.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-xs-12"><img class="img-responsive center-block" src="/static/img/producthunt-logo.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id = "root">   
+        <!-- Hacker News -->
+            <a name="hackernews"></a>
+            <div class="content-section-b">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="section-heading">
+                                <a style="color: #000000;" href="https://news.ycombinator.com/" target="_blank">Hacker News</a></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <hacker-news :results="hackernewsResults"></hacker-news>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Hunt -->
+            <a name="producthunt"></a>
+            <div class="content-section-b">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="section-heading">
+                                <a style="color:#da552f;" href="http://www.producthunt.com/" target="_blank">Product Hunt</a></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <product-hunt :results="producthuntResults"></product-hunt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Techcrunch -->
+            <a name="techcrunch"></a>
+            <div class="content-section-b">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="section-heading"><a style="color:#089E00;" href="http://techcrunch.com/" target="_blank">Tech Crunch</a></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <tech-meme :results="techcrunchResults"></tech-meme>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TechMeme -->
+            <a name="techmeme"></a>
+            <div class="content-section-b">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="section-heading"><a style="color:#174a61;"href="http://www.techmeme.com/" target="_blank">TechMeme</a></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <tech-meme :results="techmemeResults"></tech-meme>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <!-- Terms -->
+        <a name="terms"></a>
+        <div class="content-section-a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-5">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading techfeedy-section-heading">Terms of service </h2>
+                        <p class="lead">The techfeedy service uses RSS Feeds and API from different sites. Only top 10 topics are displayed</p>
+                        <p class="lead">Site tracking data is collected by Google Analytics.</p>
+                        <p class="lead">There's no warranty for this service.</p>
+                        <p class="lead">Techfeedy is not affiliated with above mentioned sites</p>
+                    </div>
+                    <div class="col-lg-6 col-lg-offset-2 col-sm-7 techfeedy-section-heading">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Built with great tools</h2>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 techfeedy-space"><img style="height:60px" src="/static/img/nodejs-logo.svg"></div>
+                            <div class="col-md-6 col-sm-12 techfeedy-space"><img style="height:50px" src="/static/img/vuejs-logo.png"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 techfeedy-space"><img style="height:60px" src="/static/img/heroku-logo.svg"></div>
+                            <div class="col-md-6 col-sm-12 techfeedy-space"><img style="height:50px" src="/static/img/bootstrap-logo.png"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 techfeedy-space"><img style="height:50px" src="/static/img/pixabay-logo.png"></div>
+                            <div class="col-md-6 col-sm-12 techfeedy-space"><img style="height:100px" src="/static/img/postgres-sql.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- /.container -->
+        </div>        
+        
+        <!-- contact -->
+        <a name="contact"></a>
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading techfeedy-section-heading">Questions?</h2>
+                        <p class="lead">If you have any suggestions, reach out to me on twitter <a href="https://twitter.com/mooveprince">@mooveprince</a> or facebook <a href="https://facebook.com/moovendhanelan">Moovendhan Elanchezhiyan</a></p>
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6 techfeedy-contact-wrapper">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter techfeedy-contact-logo"></i>
+                    </div>
+                </div>
+            </div>
+        <!-- /.container -->
+        </div>
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="/#">Home</a>
+                            </li>
+                            <li class="footer-menu-divider">-</li>
+                            <li>
+                                <a href="/#about">About</a>
+                            </li>
+                            <li class="footer-menu-divider">-</li>
+                            <li>
+                                <a href="/#terms">Terms</a>
+                            </li>
+                            <li class="footer-menu-divider">-</li>
+                            <li>
+                                <a href="/#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted small">Copyright © TechFeedy 2017. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/static/js/jquery.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/vue.min.js"></script>
+        <script src="/static/js/axios.min.js"></script>
+        <script src="/static/js/app.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-57737303-2', 'auto');
+          ga('send', 'pageview');
+        </script>
+    </body>
+</html>
