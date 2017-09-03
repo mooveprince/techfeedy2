@@ -41,7 +41,7 @@ Vue.component('tech-crunch', simpleRender());
 Vue.component('product-hunt', {
         props: ['results'],
         template : `<div class="list-group"><div v-for="result in processTopics">
-                        <a href="{{result.redirect_url}}" class="list-group-item list-group-item-action" target="_blank">{{ result.name }} <span> -  {{ result.tagline }} </span> </a> 
+                        <a href="{{result.redirect_url}}" target="_blank" class="list-group-item list-group-item-action" target="_blank">{{ result.name }} <span> -  {{ result.tagline }} </span> </a> 
                     </div></div>`,
         computed : {
             processTopics () {
@@ -53,7 +53,7 @@ function simpleRender () {
     return {
         props: ['results'],
         template : `<div class="list-group"><div v-for="result in processTopics">
-                        <a href={{result.link}} class="list-group-item list-group-item-action">{{result.title}}</a>
+                        <a href={{result.link}} target="_blank" class="list-group-item list-group-item-action">{{result.title}}</a>
                     </div></div>`,
         computed : {
             processTopics () {
